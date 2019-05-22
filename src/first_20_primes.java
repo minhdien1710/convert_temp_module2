@@ -6,15 +6,14 @@ public class first_20_primes {
         System.out.println("Nhap so luong:");
         int num = scanner.nextInt();
         int count = 0;
-        int n = 2;
-        for (n= 2; count < num; n++){
+        for (int n= 2; count < num; n++){
             if(isPrime(n)){
                 count++;
                 System.out.println(n);
             }
         }
     }
-    public static boolean isPrime(int n){
+    private static boolean isPrime(int n){
         int i =2;
         while (i<Math.sqrt(n)){
             if(n%i==0){
